@@ -32,7 +32,7 @@ const Footer = () => {
   );
 
   return (
-    <footer className="bg-[#0A0A0A] border-t border-white/10 py-12">
+    <footer className="bg-[#11151B] border-t border-white/10 py-12">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
@@ -43,7 +43,7 @@ const Footer = () => {
               Global automation infrastructure for growth-minded operators.
             </p>
             <div className="flex gap-4">
-              <a href="https://twitter.com/omnimateai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-lime transition">
+              <a href="https://instagram.com/omnimate.ai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-lime transition">
                 <TwitterIcon />
               </a>
               <a href="https://linkedin.com/company/omnimateai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-lime transition">
@@ -52,7 +52,7 @@ const Footer = () => {
               <a href="https://github.com/omnimateai" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-lime transition">
                 <GithubIcon />
               </a>
-              <a href="mailto:hello@omnimate.org" className="text-gray-400 hover:text-lime transition">
+              <a href="mailto:omnimate.work@gmail.com" className="text-gray-400 hover:text-lime transition">
                 <MailIcon />
               </a>
             </div>
@@ -63,6 +63,7 @@ const Footer = () => {
             <ul className="space-y-2">
               <li><Link to="/" className="text-gray-400 hover:text-white text-sm">Home</Link></li>
               <li><Link to="/services" className="text-gray-400 hover:text-white text-sm">Services</Link></li>
+                <li><Link to="/about" className="text-gray-400 hover:text-white text-sm">About</Link></li>
               <li><Link to="/work" className="text-gray-400 hover:text-white text-sm">Work</Link></li>
               <li><Link to="/contact" className="text-gray-400 hover:text-white text-sm">Contact</Link></li>
             </ul>
@@ -87,7 +88,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-white/10 pt-8 text-center text-gray-500 text-xs">
-          <p>&copy; 2025 Omnimate — Global Automation Infrastructure. All systems operational.</p>
+          <p>&copy; 2025 Omnimate - Global Automation Infrastructure. All systems operational.</p>
         </div>
       </div>
     </footer>

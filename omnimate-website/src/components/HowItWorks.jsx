@@ -11,7 +11,7 @@ const steps = [
 
 const HowItWorks = () => {
   return (
-    <section className="section bg-[#080808]">
+    <section className="section bg-[#080A0E]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -33,14 +33,14 @@ const HowItWorks = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="relative p-6 bg-[#141414] rounded-lg border-l-4 border-lime"
+              className="relative p-6 bg-[#11151B] rounded-lg border-l-4 border-lime"
             >
               <span className="text-lime font-mono text-sm">{step.number}</span>
               <h3 className="text-xl font-display font-bold mt-2 mb-2">{step.title}</h3>
               <p className="text-gray-400 text-sm">{step.desc}</p>
               {idx < 3 && (
                 <div className="hidden md:block absolute -right-4 top-1/2 transform -translate-y-1/2 text-lime text-2xl">
-                  →
+                  -&gt;
                 </div>
               )}
             </motion.div>

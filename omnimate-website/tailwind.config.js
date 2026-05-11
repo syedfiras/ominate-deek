@@ -10,14 +10,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        lime: '#C8FF00',
-        dark: '#080808',
-        surface: '#141414',
-        'surface-light': '#1A1A1A',
+        lime: '#F4F7FA',
+        dark: '#080A0E',
+        surface: '#11151B',
+        'surface-light': '#1A2029',
       },
       fontFamily: {
-        display: ['Syne', 'sans-serif'],
-        mono: ['IBM Plex Mono', 'monospace'],
+        display: ['Space Grotesk', 'sans-serif'],
+        mono: ['Inter', 'sans-serif'],
+        sans: ['Inter', 'sans-serif'],
       },
       animation: {
         'fade-up': 'fadeUp 0.8s cubic-bezier(0.2, 0.9, 0.4, 1.1) forwards',

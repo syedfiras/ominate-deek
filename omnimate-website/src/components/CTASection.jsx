@@ -12,7 +12,7 @@ const CTASection = () => {
   );
 
   return (
-    <section className="py-20 bg-[#0A0A0A] border-t border-b border-lime/20">
+    <section className="py-20 bg-[#11151B] border-t border-b border-lime/20">
       <div className="container mx-auto px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -27,7 +27,7 @@ const CTASection = () => {
           </p>
           <Link to="/contact">
             <button className="btn-primary text-lg px-8 py-4 flex items-center gap-2 mx-auto">
-              Let's Build → <ArrowRightIcon />
+              Let's Build <ArrowRightIcon />
             </button>
           </Link>
         </motion.div>

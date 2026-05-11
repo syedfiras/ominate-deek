@@ -28,7 +28,7 @@ const testimonials = [
 
 const Results = () => {
   return (
-    <section className="section bg-[#080808]">
+    <section className="section bg-[#080A0E]">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -49,7 +49,7 @@ const Results = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="text-center p-6 border border-white/10 rounded-lg bg-[#141414]"
+              className="text-center p-6 border border-white/10 rounded-lg bg-[#11151B]"
             >
               <div className="text-5xl md:text-6xl font-display font-bold text-lime mb-2">{stat.value}</div>
               <div className="text-gray-300 font-mono">{stat.label}</div>
@@ -65,7 +65,7 @@ const Results = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
-              className="bg-[#141414] p-6 rounded-lg border border-white/5"
+              className="bg-[#11151B] p-6 rounded-lg border border-white/5"
             >
               <p className="text-gray-300 mb-4 italic">"{testimonial.text}"</p>
               <div>

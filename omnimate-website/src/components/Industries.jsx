@@ -4,12 +4,12 @@ import { motion } from 'framer-motion';
 
 const industries = [
   'E-commerce', 'Healthcare', 'Finance', 'SaaS', 'Agencies', 'Real Estate',
-  'E-commerce', 'Healthcare', 'Finance', 'SaaS', 'Agencies', 'Real Estate'
+  'Education', 'Clinics', 'Restaurants', 'NGOs', 'Local Services', 'Startups'
 ];
 
 const Industries = () => {
   return (
-    <section className="section bg-[#0A0A0A] overflow-hidden">
+    <section className="section bg-[#11151B] overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -23,13 +23,13 @@ const Industries = () => {
           <p className="text-gray-400 font-mono">Global infrastructure for growth-minded operators</p>
         </motion.div>
 
-        <div className="relative">
-          <div className="flex overflow-x-auto hide-scrollbar gap-4 py-4">
-            {industries.map((industry, idx) => (
+        <div className="relative overflow-hidden marquee-mask py-4">
+          <div className="marquee-track flex w-max gap-4">
+            {[...industries, ...industries].map((industry, idx) => (
               <motion.div
-                key={idx}
+                key={`${industry}-${idx}`}
                 whileHover={{ scale: 1.05 }}
-                className="flex-shrink-0 bg-[#141414] px-8 py-4 rounded-full border border-white/10 hover:border-lime/50 transition-all"
+                className="flex-shrink-0 bg-[#11151B] px-8 py-4 rounded-full border border-white/10 hover:border-lime/50 transition-all"
               >
                 <span className="font-mono font-semibold">{industry}</span>
               </motion.div>

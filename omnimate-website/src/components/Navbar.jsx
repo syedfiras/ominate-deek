@@ -17,6 +17,7 @@ const Navbar = () => {
 
   const navLinks = [
     { path: '/', label: 'Home' },
+    { path: '/about', label: 'About' },
     { path: '/services', label: 'Services' },
     { path: '/work', label: 'Work' },
     { path: '/contact', label: 'Contact' },
@@ -41,11 +42,11 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? 'bg-[#080808]/90 backdrop-blur-md border-b border-white/10' : 'bg-transparent'
+        scrolled ? 'bg-[#080A0E]/88 backdrop-blur-xl border-b border-white/10' : 'bg-transparent'
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold font-display tracking-tighter">
+        <Link to="/" className="text-2xl font-bold font-display tracking-normal">
           OMNIMATE
           <span className="text-lime">.</span>
         </Link>
@@ -77,7 +78,7 @@ const Navbar = () => {
           ))}
           <Link to="/contact">
             <button className="btn-primary text-sm px-5 py-2">
-              Start a Project →
+              Start a Project <span aria-hidden="true">-&gt;</span>
             </button>
           </Link>
         </div>
@@ -95,7 +96,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-[#0A0A0A] border-t border-white/10"
+            className="md:hidden bg-[#11151B] border-t border-white/10"
           >
             <div className="container mx-auto px-6 py-6 flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -113,7 +114,7 @@ const Navbar = () => {
                 </NavLink>
               ))}
               <Link to="/contact" onClick={() => setIsOpen(false)}>
-                <button className="btn-primary w-full text-center">Start a Project →</button>
+                <button className="btn-primary w-full text-center">Start a Project <span aria-hidden="true">-&gt;</span></button>
               </Link>
             </div>
           </motion.div>
